@@ -1,4 +1,4 @@
-/home/roots/joey/ZRX/build/CMakeFiles/vulkan_triangle.dir
-/home/roots/joey/ZRX/build/CMakeFiles/vulkan_shaders.dir
-/home/roots/joey/ZRX/build/CMakeFiles/edit_cache.dir
-/home/roots/joey/ZRX/build/CMakeFiles/rebuild_cache.dir
+/home/roots/Downloads/ZRX-main/build/CMakeFiles/vulkan_triangle.dir
+/home/roots/Downloads/ZRX-main/build/CMakeFiles/vulkan_shaders.dir
+/home/roots/Downloads/ZRX-main/build/CMakeFiles/edit_cache.dir
+/home/roots/Downloads/ZRX-main/build/CMakeFiles/rebuild_cache.dir

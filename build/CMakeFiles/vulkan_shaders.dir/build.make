@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roots/joey/ZRX
+CMAKE_SOURCE_DIR = /home/roots/Downloads/ZRX-main
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roots/joey/ZRX/build
+CMAKE_BINARY_DIR = /home/roots/Downloads/ZRX-main/build
 
 # Utility rule file for vulkan_shaders.
 
@@ -69,13 +69,13 @@ include CMakeFiles/vulkan_shaders.dir/progress.make
 CMakeFiles/vulkan_shaders: shaders/triangle.vert.spv
 CMakeFiles/vulkan_shaders: shaders/triangle.frag.spv
 
-shaders/triangle.frag.spv: /home/roots/joey/ZRX/shaders/triangle.frag
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/roots/joey/ZRX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating shaders/triangle.frag.spv"
-	/usr/bin/glslangValidator -V --glsl-version 450 -g -Od /home/roots/joey/ZRX/shaders/triangle.frag -o /home/roots/joey/ZRX/build/shaders/triangle.frag.spv
+shaders/triangle.frag.spv: /home/roots/Downloads/ZRX-main/shaders/triangle.frag
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/roots/Downloads/ZRX-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating shaders/triangle.frag.spv"
+	/usr/bin/glslangValidator -V --glsl-version 450 -g -Od /home/roots/Downloads/ZRX-main/shaders/triangle.frag -o /home/roots/Downloads/ZRX-main/build/shaders/triangle.frag.spv
 
-shaders/triangle.vert.spv: /home/roots/joey/ZRX/shaders/triangle.vert
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/roots/joey/ZRX/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating shaders/triangle.vert.spv"
-	/usr/bin/glslangValidator -V --glsl-version 450 -g -Od /home/roots/joey/ZRX/shaders/triangle.vert -o /home/roots/joey/ZRX/build/shaders/triangle.vert.spv
+shaders/triangle.vert.spv: /home/roots/Downloads/ZRX-main/shaders/triangle.vert
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/roots/Downloads/ZRX-main/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating shaders/triangle.vert.spv"
+	/usr/bin/glslangValidator -V --glsl-version 450 -g -Od /home/roots/Downloads/ZRX-main/shaders/triangle.vert -o /home/roots/Downloads/ZRX-main/build/shaders/triangle.vert.spv
 
 CMakeFiles/vulkan_shaders.dir/codegen:
 .PHONY : CMakeFiles/vulkan_shaders.dir/codegen
@@ -95,6 +95,6 @@ CMakeFiles/vulkan_shaders.dir/clean:
 .PHONY : CMakeFiles/vulkan_shaders.dir/clean
 
 CMakeFiles/vulkan_shaders.dir/depend:
-	cd /home/roots/joey/ZRX/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roots/joey/ZRX /home/roots/joey/ZRX /home/roots/joey/ZRX/build /home/roots/joey/ZRX/build /home/roots/joey/ZRX/build/CMakeFiles/vulkan_shaders.dir/DependInfo.cmake "--color=$(COLOR)" vulkan_shaders
+	cd /home/roots/Downloads/ZRX-main/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roots/Downloads/ZRX-main /home/roots/Downloads/ZRX-main /home/roots/Downloads/ZRX-main/build /home/roots/Downloads/ZRX-main/build /home/roots/Downloads/ZRX-main/build/CMakeFiles/vulkan_shaders.dir/DependInfo.cmake "--color=$(COLOR)" vulkan_shaders
 .PHONY : CMakeFiles/vulkan_shaders.dir/depend
 

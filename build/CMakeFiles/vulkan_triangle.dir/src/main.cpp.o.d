@@ -1,5 +1,5 @@
 CMakeFiles/vulkan_triangle.dir/src/main.cpp.o: \
- /home/roots/joey/ZRX/src/main.cpp /usr/include/stdc-predef.h \
+ /home/roots/Downloads/ZRX-main/src/main.cpp /usr/include/stdc-predef.h \
  /usr/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h /usr/include/stdint.h \

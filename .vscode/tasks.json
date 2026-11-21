@@ -4,7 +4,7 @@
         {
             "label": "Build Vulkan Triangle",
             "type": "shell",
-            "command": "cmake -S \"${workspaceFolder}\" -B \"${workspaceFolder}/build\" && cmake --build \"${workspaceFolder}/build\" --parallel",
+            "command": "cmake -E remove_directory \"${workspaceFolder}/build\" && cmake -S \"${workspaceFolder}\" -B \"${workspaceFolder}/build\" && cmake --build \"${workspaceFolder}/build\" --parallel",
             "options": {
                 "cwd": "${workspaceFolder}"
             },

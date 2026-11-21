@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/roots/joey/ZRX/build/cmake_install.cmake"
+		"/home/roots/Downloads/ZRX-main/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

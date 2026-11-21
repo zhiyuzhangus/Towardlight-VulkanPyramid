@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/roots/joey/ZRX/src/main.cpp" "CMakeFiles/vulkan_triangle.dir/src/main.cpp.o" "gcc" "CMakeFiles/vulkan_triangle.dir/src/main.cpp.o.d"
+  "/home/roots/Downloads/ZRX-main/src/main.cpp" "CMakeFiles/vulkan_triangle.dir/src/main.cpp.o" "gcc" "CMakeFiles/vulkan_triangle.dir/src/main.cpp.o.d"
   "" "vulkan_triangle" "gcc" "CMakeFiles/vulkan_triangle.dir/link.d"
   )
 
