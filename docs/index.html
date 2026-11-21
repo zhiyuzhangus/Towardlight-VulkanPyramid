@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111518">
+  <title>ZRX · Pyramid viewer</title>
+  <link rel="stylesheet" href="./viewer.css">
+  <script defer src="./viewer.js"></script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="https://github.com/zhiyuzhangus/ZRX" aria-label="ZRX repository">ZRX</a>
+    <span class="divider" aria-hidden="true"></span>
+    <h1>Pyramid viewer</h1>
+    <a class="source" href="https://github.com/zhiyuzhangus/ZRX/blob/main/shaders/triangle.vert">View shader</a>
+  </header>
+  <main>
+    <section class="viewport" aria-label="Interactive pyramid">
+      <canvas id="scene" tabindex="0" aria-label="Colored 3D pyramid. Use the arrow keys to orbit, plus and minus to zoom, and R to reset."></canvas>
+      <div class="caption"><span class="swatch"></span>Vulkan pyramid</div>
+      <div class="zoom" role="group" aria-label="Zoom">
+        <button type="button" id="zoom-out" aria-label="Zoom out">−</button>
+        <output id="zoom-value" aria-label="Zoom level">100%</output>
+        <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
+      </div>
+    </section>
+    <div class="toolbar">
+      <div class="segment" role="group" aria-label="Camera projection">
+        <button type="button" id="perspective" aria-pressed="true">Perspective</button>
+        <button type="button" id="ortho" aria-pressed="false">Orthographic</button>
+      </div>
+      <button class="reset" id="reset" type="button">Reset view</button>
+    </div>
+    <p class="help" id="instructions">Drag to orbit <span>·</span> Shift-drag to pan <span>·</span> Scroll to zoom</p>
+  </main>
+</body>
+</html>
