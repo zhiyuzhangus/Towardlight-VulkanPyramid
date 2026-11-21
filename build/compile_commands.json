@@ -1,8 +1,8 @@
 [
 {
-  "directory": "/home/roots/joey/towardlight-triangle/build",
-  "command": "/usr/bin/c++ -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DSHADER_DIR=\\\"/home/roots/joey/towardlight-triangle/build/shaders\\\"  -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-missing-field-initializers -O0 -g3 -o CMakeFiles/vulkan_triangle.dir/src/main.cpp.o -c /home/roots/joey/towardlight-triangle/src/main.cpp",
-  "file": "/home/roots/joey/towardlight-triangle/src/main.cpp",
+  "directory": "/home/roots/joey/ZRX/build",
+  "command": "/usr/bin/c++ -DGLM_FORCE_DEPTH_ZERO_TO_ONE -DSHADER_DIR=\\\"/home/roots/joey/ZRX/build/shaders\\\"  -g -std=c++17 -Wall -Wextra -Wpedantic -Wno-missing-field-initializers -O0 -g3 -o CMakeFiles/vulkan_triangle.dir/src/main.cpp.o -c /home/roots/joey/ZRX/src/main.cpp",
+  "file": "/home/roots/joey/ZRX/src/main.cpp",
   "output": "CMakeFiles/vulkan_triangle.dir/src/main.cpp.o"
 }
 ]

@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/roots/joey/towardlight-triangle/build/cmake_install.cmake"
+		"/home/roots/joey/ZRX/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
