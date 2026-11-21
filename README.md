@@ -28,24 +28,6 @@ Install a Vulkan driver for your GPU as well. For Mesa-based Intel/AMD GPUs,
 `mesa-vulkan-drivers` provides one; NVIDIA systems need the matching proprietary
 driver. `vulkan-tools` is optional but provides `vulkaninfo` for diagnostics.
 
-## Build and run
-
-From the project directory:
-
-```sh
-cmake -S . -B build
-cmake --build build
-./build/vulkan_triangle
-```
-
-In VS Code, use **Terminal > Run Build Task** (or `Ctrl+Shift+B`) to configure
-and build the CMake target. To launch it from VS Code, run the
-**Run Vulkan Triangle** task. The generated **C/C++: g++ build active file**
-task is overridden in `.vscode/tasks.json` to run the same CMake build, since
-compiling this source by itself does not compile its shaders or link Vulkan
-and GLFW. To use **Run and Debug** or press `F5`, select **Debug Vulkan
-Triangle**; its launch configuration builds the sample before starting it.
-
 The program prints the Vulkan device it selected. It prefers a discrete GPU,
 then an integrated GPU, and can use a CPU Vulkan implementation if that is the
 only suitable device. Use **left-drag** to orbit, **middle/right-drag** to pan,
@@ -54,3 +36,5 @@ the orbit and zoom pivot there; while holding **Ctrl**, left-drag to pan.
 Press **R** to reset the camera, **P** for perspective projection, or **O**
 for orthographic projection. Close the window to exit.
 # ZRX
+
+This responstory is writen and learned by Zhiyu,Zhang.
