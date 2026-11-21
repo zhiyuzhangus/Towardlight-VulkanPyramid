@@ -4,7 +4,7 @@ A small native C++ sample that draws a colored 3D pyramid using the Vulkan API.
 GLFW is used only to create the window and receive window events; rendering is
 performed entirely with Vulkan (there is no OpenGL renderer).
 
-[**Try the interactive pyramid in your browser**](https://zhiyuzhangus.github.io/ZRX/)
+[**Try the interactive pyramid in your browser**](https://zhiyuzhangus.github.io/ZRX---Vulkan-triangle-GLFW/)
 
 Orbit, pan, zoom, and switch projections in a browser rendering of the same pyramid.
 
