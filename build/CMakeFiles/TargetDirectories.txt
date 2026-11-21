@@ -1,0 +1,4 @@
+/home/roots/joey/towardlight-triangle/build/CMakeFiles/vulkan_triangle.dir
+/home/roots/joey/towardlight-triangle/build/CMakeFiles/vulkan_shaders.dir
+/home/roots/joey/towardlight-triangle/build/CMakeFiles/edit_cache.dir
+/home/roots/joey/towardlight-triangle/build/CMakeFiles/rebuild_cache.dir

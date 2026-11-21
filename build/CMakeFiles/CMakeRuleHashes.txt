@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+0df6c6eb425c3f77eca5378abb20215f CMakeFiles/vulkan_shaders
+679c5f94156f3119a19fa996be2dd8e1 shaders/triangle.frag.spv
+96b360cb8619e64b34b1131ee38329d5 shaders/triangle.vert.spv
