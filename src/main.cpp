@@ -1116,8 +1116,11 @@ private:
         int height = 0;
         glfwGetFramebufferSize(window_, &width, &height);
         while (width == 0 || height == 0) {
-            glfwGetFramebufferSize(window_, &width, &height);
+            if (glfwWindowShouldClose(window_)) {
+                return;
+            }
             glfwWaitEvents();
+            glfwGetFramebufferSize(window_, &width, &height);
         }
         checkVk(vkDeviceWaitIdle(device_), "vkDeviceWaitIdle");
         cleanupSwapchainResources();
