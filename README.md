@@ -1,10 +1,10 @@
-# Towardlight-VulkanPyramid-main
+# Towardlight-VulkanPyramid
 
 A small native C++ sample that draws a colored 3D pyramid using the Vulkan API.
 GLFW is used only to create the window and receive window events; rendering is
 performed entirely with Vulkan (there is no OpenGL renderer).
 
-[**Try the interactive pyramid in your browser**](https://zhiyuzhangus.github.io/Towardlight-VulkanPyramid-main/)
+[**Try the interactive pyramid in your browser**](https://zhiyuzhangus.github.io/Towardlight-VulkanPyramid/)
 
 In the browser, drag to orbit, Shift-drag to pan, and scroll to zoom. On a
 touchscreen, drag with one finger to orbit or use two fingers to pan and pinch.
