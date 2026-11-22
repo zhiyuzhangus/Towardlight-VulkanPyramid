@@ -1,12 +1,16 @@
-# Vulkan Pyramid
+# Towardlight-VulkanPyramid-main
 
 A small native C++ sample that draws a colored 3D pyramid using the Vulkan API.
 GLFW is used only to create the window and receive window events; rendering is
 performed entirely with Vulkan (there is no OpenGL renderer).
 
-[**Try the interactive pyramid in your browser**](https://zhiyuzhangus.github.io/ZRX---Vulkan-triangle-GLFW/)
+[**Try the interactive pyramid in your browser**](https://zhiyuzhangus.github.io/Towardlight-VulkanPyramid-main/)
 
-Orbit, pan, zoom, and switch projections in a browser rendering of the same pyramid.
+In the browser, drag to orbit, Shift-drag to pan, and scroll to zoom. On a
+touchscreen, drag with one finger to orbit or use two fingers to pan and pinch.
+With the canvas focused, use the arrow keys to orbit, Shift+arrows to pan,
++/- to zoom, P/O to change projection, and R to reset. To run the viewer
+offline, open `docs/index.html` in a browser.
 
 ## Requirements
 
@@ -28,6 +32,17 @@ Install a Vulkan driver for your GPU as well. For Mesa-based Intel/AMD GPUs,
 `mesa-vulkan-drivers` provides one; NVIDIA systems need the matching proprietary
 driver. `vulkan-tools` is optional but provides `vulkaninfo` for diagnostics.
 
+## Build and run the native demo
+
+From the project directory, use a fresh build directory so CMake generates
+shaders and paths for your checkout:
+
+```sh
+cmake -S . -B build-local
+cmake --build build-local
+./build-local/vulkan_triangle
+```
+
 The program prints the Vulkan device it selected. It prefers a discrete GPU,
 then an integrated GPU, and can use a CPU Vulkan implementation if that is the
 only suitable device. Use **left-drag** to orbit, **middle/right-drag** to pan,
@@ -35,6 +50,7 @@ and **+/-** to zoom. **Ctrl+left-click** a visible point on the pyramid to set
 the orbit and zoom pivot there; while holding **Ctrl**, left-drag to pan.
 Press **R** to reset the camera, **P** for perspective projection, or **O**
 for orthographic projection. Close the window to exit.
-# ZRX
+
+## Author
 
 This responstory is writen and learned by Zhiyu,Zhang.
