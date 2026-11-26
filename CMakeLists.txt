@@ -11,7 +11,7 @@ if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
     set(CMAKE_BUILD_TYPE Debug CACHE STRING "Build type" FORCE)
 endif()
 
-find_package(Vulkan REQUIRED)
+find_package(Vulkan 1.3 REQUIRED)
 find_package(glfw3 3.3 REQUIRED)
 find_package(glm CONFIG QUIET)
 if(NOT TARGET glm::glm)
@@ -44,7 +44,7 @@ endif()
 set(SHADER_OUTPUT_DIR "${CMAKE_CURRENT_BINARY_DIR}/shaders")
 file(MAKE_DIRECTORY "${SHADER_OUTPUT_DIR}")
 
-foreach(SHADER triangle.vert triangle.frag)
+foreach(SHADER triangle.vert triangle.frag compute.comp)
     add_custom_command(
         OUTPUT "${SHADER_OUTPUT_DIR}/${SHADER}.spv"
         COMMAND "${GLSLANG_VALIDATOR}" -V --glsl-version 450 -g -Od
