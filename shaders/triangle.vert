@@ -1,30 +1,26 @@
 #version 450
 
-layout(push_constant) uniform Transform {
-    mat4 mvp;
-} transform;
+layout(set = 0, binding = 0) uniform CameraData {
+    mat4 viewProjection;
+} camera;
+
+layout(std430, set = 0, binding = 2) readonly buffer ComputeOutput {
+    vec4 values[];
+} computeOutput;
+
+layout(push_constant) uniform DrawData {
+    vec4 tint;
+} drawData;
+
+layout(location = 0) in vec3 inPosition;
+layout(location = 1) in vec3 inColor;
+layout(location = 2) in vec2 inUv;
 
 layout(location = 0) out vec3 color;
-
-const vec3 positions[18] = vec3[](
-    vec3(0.0, 0.9, 0.0), vec3(-0.7, -0.7, -0.7), vec3(0.7, -0.7, -0.7),
-    vec3(0.0, 0.9, 0.0), vec3(0.7, -0.7, -0.7), vec3(0.7, -0.7, 0.7),
-    vec3(0.0, 0.9, 0.0), vec3(0.7, -0.7, 0.7), vec3(-0.7, -0.7, 0.7),
-    vec3(0.0, 0.9, 0.0), vec3(-0.7, -0.7, 0.7), vec3(-0.7, -0.7, -0.7),
-    vec3(-0.7, -0.7, -0.7), vec3(0.7, -0.7, 0.7), vec3(0.7, -0.7, -0.7),
-    vec3(-0.7, -0.7, -0.7), vec3(-0.7, -0.7, 0.7), vec3(0.7, -0.7, 0.7)
-);
-
-const vec3 colors[18] = vec3[](
-    vec3(1.0, 0.25, 0.18), vec3(1.0, 0.25, 0.18), vec3(1.0, 0.25, 0.18),
-    vec3(0.2, 0.8, 0.95), vec3(0.2, 0.8, 0.95), vec3(0.2, 0.8, 0.95),
-    vec3(0.95, 0.75, 0.2), vec3(0.95, 0.75, 0.2), vec3(0.95, 0.75, 0.2),
-    vec3(0.55, 0.35, 0.95), vec3(0.55, 0.35, 0.95), vec3(0.55, 0.35, 0.95),
-    vec3(0.2, 0.8, 0.4), vec3(0.2, 0.8, 0.4), vec3(0.2, 0.8, 0.4),
-    vec3(0.2, 0.8, 0.4), vec3(0.2, 0.8, 0.4), vec3(0.2, 0.8, 0.4)
-);
+layout(location = 1) out vec2 uv;
 
 void main() {
-    gl_Position = transform.mvp * vec4(positions[gl_VertexIndex], 1.0);
-    color = colors[gl_VertexIndex];
+    gl_Position = camera.viewProjection * vec4(inPosition, 1.0);
+    color = inColor * computeOutput.values[0].rgb * drawData.tint.rgb;
+    uv = inUv;
 }
